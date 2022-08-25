@@ -1,0 +1,19 @@
+package in.codegram.food_order.serviceimpl;
+
+import in.codegram.food_order.daoimpl.JPAUtilDAOImpl;
+import in.codegram.food_order.modal.Food;
+
+public class FoodServiceImpl {
+	
+	private JPAUtilDAOImpl jpaUtilImpl;
+	
+	public FoodServiceImpl() {
+		jpaUtilImpl = new JPAUtilDAOImpl();
+	}
+	
+	public String saveFood(Food food) {
+		jpaUtilImpl.save(food);
+		return "user saved successfully";
+	}
+
+}

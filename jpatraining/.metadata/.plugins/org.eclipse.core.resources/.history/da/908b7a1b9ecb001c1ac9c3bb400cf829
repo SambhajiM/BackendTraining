@@ -1,0 +1,12 @@
+package in.codegram.food_order.util;
+
+public class MenuUtil {
+
+	
+	public MenuUtil() {
+		
+	}
+	
+	
+
+}

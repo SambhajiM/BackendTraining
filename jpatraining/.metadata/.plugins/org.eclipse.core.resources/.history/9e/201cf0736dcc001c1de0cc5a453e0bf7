@@ -1,0 +1,172 @@
+package in.codegram.food_order.util;
+
+import java.util.List;
+import java.util.Scanner;
+
+import in.codegram.food_order.modal.Food;
+import in.codegram.food_order.modal.FoodCategory;
+import in.codegram.food_order.modal.User;
+import in.codegram.food_order.serviceimpl.FoodCategoryServiceImpl;
+import in.codegram.food_order.serviceimpl.FoodServiceImpl;
+import in.codegram.food_order.serviceimpl.UserServiceImpl;
+
+public class MenuUtil {
+
+	private FoodServiceImpl foodServiceImpl;
+	private UserServiceImpl userServiceImpl;
+	private FoodCategoryServiceImpl foodCategoryServiceImpl;
+	
+	public MenuUtil() {
+		foodServiceImpl = new FoodServiceImpl();
+		userServiceImpl = new UserServiceImpl();
+		foo
+	}
+	
+	public void start() {
+		int menuChoice;
+		String continueChoice;
+		Scanner sc = new Scanner(System.in);
+		do {
+			showMenu();
+			System.out.println("Enetr your choice: (1,2,3,4,5,6,7,8,9,10,11,12) : ");
+			menuChoice = sc.nextInt();
+			
+			switch (menuChoice) {
+			case 1:
+				User user = new User();
+				System.out.println("Enter User Name");
+				user.setName(sc.next());
+				sc.nextLine();
+				String returnString = userServiceImpl.saveUser(user);
+				System.out.println(returnString);
+				break;
+			case 2:
+				Food food = new Food();
+				System.out.println("Enter Food Name");
+				food.setName(sc.next());
+				sc.nextLine();
+				String returnFoodString = foodServiceImpl.saveFood(food);
+				System.out.println(returnFoodString);
+				break;
+			case 3:
+				FoodCategory foodCategory = new FoodCategory();
+				System.out.println("Enter Food Category Name");
+				food.setName(sc.next());
+				sc.nextLine();
+				String returnFoodCategory = foodServiceImpl.saveFoodCategory(food);
+				System.out.println(returnFoodCategory);
+				break;	
+			case 4:
+				List<User> newObject = userServiceImpl.getUser();
+				for(Object userDataList : newObject) {
+					System.out.println(userDataList);
+				}
+				break;	
+			case 5:
+				List<Food> newFoodObject = foodServiceImpl.getFood();
+				for(Object foodDataList : newFoodObject) {
+					System.out.println(foodDataList);
+				}
+				break;
+			case 6:
+				List<FoodCategory> newFoodCategory = foodServiceImpl.getFoodCategory();
+				for(Object foodDataList : newFoodCategory) {
+					System.out.println(foodDataList);
+				}
+				break;	
+			case 7:
+				System.out.println("Enter user id");
+				Long userId = sc.nextLong();
+				sc.nextLine();
+				System.out.println("Enter user name");
+				String userName = sc.nextLine();
+				userServiceImpl.updateUser(userId, userName);
+				break;	
+			case 8:
+				System.out.println("Enter food id");
+				Long foodId = sc.nextLong();
+				sc.nextLine();
+				System.out.println("Enter food name");
+				String foodName = sc.nextLine();
+				foodServiceImpl.updateFood(foodId, foodName);
+				break;	
+			case 9:
+				System.out.println("Enter food Category id");
+				Long foodCategoryId = sc.nextLong();
+				sc.nextLine();
+				System.out.println("Enter food Category name");
+				String foodCategoryName = sc.nextLine();
+				foodServiceImpl.updateFoodCategory(foodCategoryId, foodCategoryName);
+				break;	
+			case 10:
+				System.out.println("Enter User id to delete");
+				Long deletUserId = sc.nextLong();
+				userServiceImpl.deletUser(deletUserId);
+				System.out.println("User "+ deletUserId + " deleted sucessfully");
+				break;
+			case 11:
+				System.out.println("Enter Food id to delete");
+				Long deletFoodId = sc.nextLong();
+				foodServiceImpl.deletFood(deletFoodId);
+				System.out.println("Food "+ deletFoodId + " deleted sucessfully");
+				break;	
+			case 12:
+				System.out.println("Enter Food Category id to delete");
+				Long deletFoodCategoryId = sc.nextLong();
+				FoodCategoryServiceImpl.deletFoodCategory(deletFoodCategoryId);
+				System.out.println("Food Category "+ deletFoodId + " deleted sucessfully");
+				break;	
+			
+			default:
+				System.out.println("Worng Choice");
+				break;
+			}
+			System.out.println("Do you want to continue : (yes/no) : ");
+			continueChoice = sc.next();
+		}while(continueChoice.equals("yes"));
+		
+	}
+	
+	public void showMenu() {
+		System.out.println("------------------------------FOOD ORDER TOOL----------------------------");
+		System.out.println("1. Create User");
+		System.out.println("2. Create Food");
+		System.out.println("3. Create Food Category");
+		System.out.println("4. Get User");
+		System.out.println("5. Get Food");
+		System.out.println("6. Get Food Category");
+		System.out.println("7. Update User");
+		System.out.println("8. Update Food");
+		System.out.println("9. Update Food Category");
+		System.out.println("10. Delete User");
+		System.out.println("11. Delete Food");
+		System.out.println("12. Delete Food Category");
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

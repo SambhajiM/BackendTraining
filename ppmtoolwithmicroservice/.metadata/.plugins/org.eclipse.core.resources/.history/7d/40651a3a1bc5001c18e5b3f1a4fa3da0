@@ -1,0 +1,8 @@
+package in.codegram.backlog_service.domain;
+
+import javax.persistence.Entity;
+
+@Entity
+public class ProjectTask {
+
+}

@@ -1,0 +1,41 @@
+package in.codegram.firstjpademo.main;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import in.codegram.firstjpademo.domain.Employee;
+import in.codegram.firstjpademo.domain.Project;
+
+public class ApplicationStartup {
+	public static void main(String[] args) {
+		
+		//1. Get Employee from some layer
+		Employee employee = new Employee();
+		employee.setName("Ranjeet Rai");
+		
+		Project project = new Project();
+		project.setName("J2EE Training For IIHT");
+		
+		//2. Create Entity Manager Factory
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA-PU");
+		System.out.println(emf);
+		
+		//3. Create Entity Manager
+		EntityManager em =  emf.createEntityManager();
+		
+		//4. Begin Transaction
+		em.getTransaction().begin();
+		
+		//5. Perform Transaction
+		em.persist(employee);
+		em.persist(project);
+		
+		//6. Commit Transaction
+		em.getTransaction().commit();;
+		
+		//7. Release Transaction
+		em.close();
+		emf.close();		
+	}
+}

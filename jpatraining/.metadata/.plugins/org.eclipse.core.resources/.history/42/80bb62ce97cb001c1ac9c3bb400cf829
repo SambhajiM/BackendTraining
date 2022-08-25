@@ -1,0 +1,12 @@
+package in.codegram.firstjpademo.domain;
+
+@Entity
+@Table(name="projects")
+public class Project {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private int id;
+	private String name;
+
+}

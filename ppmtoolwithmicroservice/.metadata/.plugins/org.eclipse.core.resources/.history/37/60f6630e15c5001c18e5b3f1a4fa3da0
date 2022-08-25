@@ -1,0 +1,6 @@
+package in.codegram.backlog_service.domain;
+
+@Entity
+public class Project {
+
+}

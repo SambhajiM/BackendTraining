@@ -1,0 +1,48 @@
+package in.codegram.firstjpademo.main;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import in.codegram.firstjpademo.domain.Employee;
+import in.codegram.firstjpademo.domain.ExternalProject;
+import in.codegram.firstjpademo.domain.InternalProject;
+import in.codegram.firstjpademo.domain.Project;
+
+public class ApplicationStartup {
+	public static void main(String[] args) {
+		
+		Project proj = new Project();
+		proj.setName("Test Proj");
+		InternalProject internalProject = new InternalProject();
+		internalProject.setName("internal_proj1");
+		internalProject.setManagerName("Pankaj");
+		
+		ExternalProject externalProject = new ExternalProject();
+		externalProject.setName("External_proj1");
+		externalProject.setClientName("TIHT");
+			
+		
+		//2. Create Entity Manager Factory
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA-PU");
+		System.out.println(emf);
+		
+		//3. Create Entity Manager
+		EntityManager em =  emf.createEntityManager();
+		
+		//4. Begin Transaction
+		em.getTransaction().begin();
+		
+		//5. Perform Transaction
+		em.persist(proj);
+		em.persist(internalProject);
+		em.persist(externalProject);
+		
+		//6. Commit Transaction
+		em.getTransaction().commit();;
+		
+		//7. Release Transaction
+		em.close();
+		emf.close();		
+	}
+}

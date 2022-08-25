@@ -1,0 +1,5 @@
+package in.codegram.food_order.dao;
+
+public interface JPAUtilDAO {
+
+}

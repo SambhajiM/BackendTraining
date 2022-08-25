@@ -1,0 +1,8 @@
+package in.codegram.food_order.modal;
+
+public class Food {
+	
+	private int id;
+	private String name;
+
+}

@@ -1,0 +1,79 @@
+package in.codegram.food_order.daoimpl;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+import javax.persistence.Query;
+
+import in.codegram.food_order.modal.Food;
+import in.codegram.food_order.modal.User;
+
+public class JPAUtilDAOImpl {
+	
+	
+	//1. Create Entity Manager Factory
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA-PU");
+	
+	//2. Create Entity Manager
+	EntityManager em = emf.createEntityManager();
+		
+	public String save(Object object) {
+		em.getTransaction().begin();
+		em.persist(object);
+		em.getTransaction().commit();
+		em.clear();
+		emf.close();
+		return null;
+		
+	}
+	
+	public String updateUser(int id, String name) {
+		em.getTransaction().begin();
+		User user = em.find(User.class, id);
+		user.setName(name);
+		em.getTransaction().commit();
+		em.clear();
+		emf.close();
+		return null;
+		
+	}
+	
+	public String updateFood(int id, String name) {
+		em.getTransaction().begin();
+		Food food = em.find(Food.class, id);
+		food.setName(name);
+		em.getTransaction().commit();
+		em.clear();
+		emf.close();
+		return null;
+		
+	}
+	
+	public List<Object> getData(String data) {
+		em.getTransaction().begin();
+		Query query = em.createQuery("from " + data);
+		List<Object> dataList= query.getResultList();
+		em.getTransaction().commit();
+		em.clear();
+		emf.close();
+		return dataList;
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+

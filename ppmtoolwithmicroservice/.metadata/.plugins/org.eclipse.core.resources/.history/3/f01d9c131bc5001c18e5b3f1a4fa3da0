@@ -1,0 +1,5 @@
+package in.codegram.backlog_service.domain;
+
+public class ProjectTask {
+
+}

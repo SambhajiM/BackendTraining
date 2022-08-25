@@ -1,0 +1,10 @@
+package in.codegram.food_order.daoimpl;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class JPAUtilDAOImpl {
+
+	EntityManagerFactory emf = Persistence.createEntityManagerFactory("JPA-PU");
+	sysout
+}

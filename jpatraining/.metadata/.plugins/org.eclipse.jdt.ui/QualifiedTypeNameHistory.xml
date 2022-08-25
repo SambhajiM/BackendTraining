@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="javax.persistence.Embedded"/>
+    <fullyQualifiedTypeName name="javax.persistence.Embeddable"/>
+    <fullyQualifiedTypeName name="in.codegram.firstjpademo.domain.Address"/>
+    <fullyQualifiedTypeName name="javax.persistence.ElementCollection"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
+    <fullyQualifiedTypeName name="in.codegram.firstjpademo.domain.Employee"/>
+    <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.util.MenuUtil"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+    <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.serviceimpl.UserServiceImpl"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.modal.User"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Query"/>
+    <fullyQualifiedTypeName name="javax.management.Query"/>
+    <fullyQualifiedTypeName name="antlr.collections.List"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinTable"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
+    <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
+    <fullyQualifiedTypeName name="javax.persistence.ManyToMany"/>
+    <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="in.codegram.firstjpademo.domain.Project"/>
+    <fullyQualifiedTypeName name="in.codegram.firstjpademo.domain.InternalProject"/>
+    <fullyQualifiedTypeName name="in.codegram.firstjpademo.domain.ExternalProject"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.dao.JPAUtilDAO"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.service.FoodService"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.service.UserService"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.modal.Food"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.daoimpl.JPAUtilDAOImpl"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.serviceimpl.FoodCategoryServiceImpl"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
+    <fullyQualifiedTypeName name="in.codegram.food_order.modal.FoodCategory"/>
+</qualifiedTypeNameHistroy>

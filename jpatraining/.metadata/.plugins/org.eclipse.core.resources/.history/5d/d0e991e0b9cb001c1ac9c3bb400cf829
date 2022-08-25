@@ -1,0 +1,27 @@
+package in.codegram.food_order.serviceimpl;
+
+import in.codegram.food_order.daoimpl.JPAUtilDAOImpl;
+import in.codegram.food_order.modal.Food;
+import in.codegram.food_order.modal.User;
+
+public class UserServiceImpl {
+	
+private JPAUtilDAOImpl jpaUtilImpl;
+	
+	public UserServiceImpl() {
+		jpaUtilImpl = new JPAUtilDAOImpl();
+	}
+	
+	public String saveUser(User user) {
+		jpaUtilImpl.save(user);
+		return "user saved successfully";
+	}
+	
+	public String updateUser(int id, String userName) {
+		jpaUtilImpl.updateUser(id, userName);
+		return "food " + id + "updated as " + userName;
+	}
+	
+
+
+}

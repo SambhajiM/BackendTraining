@@ -1,0 +1,85 @@
+package in.codegram.food_order.util;
+
+import java.util.Scanner;
+
+import in.codegram.food_order.modal.Food;
+import in.codegram.food_order.modal.User;
+import in.codegram.food_order.serviceimpl.FoodServiceImpl;
+import in.codegram.food_order.serviceimpl.UserServiceImpl;
+
+public class MenuUtil {
+
+	private FoodServiceImpl foodServiceImpl;
+	private UserServiceImpl userServiceImpl;
+	
+	public MenuUtil() {
+		foodServiceImpl = new FoodServiceImpl();
+		userServiceImpl = new UserServiceImpl();
+	}
+	
+	public void start() {
+		int menuChoice;
+		String continueChoice;
+		Scanner sc = new Scanner(System.in);
+		do {
+			showMenu();
+			System.out.println("Enetr your choice: (1,2) : ");
+			menuChoice = sc.nextInt();
+			
+			switch (menuChoice) {
+			case 1:
+				User user = new User();
+				System.out.println("Enter User Name");
+				user.setName(sc.next());
+				sc.nextLine();
+				String returnString = userServiceImpl.saveUser(user);
+				break;
+			case 2:
+				Food food = new Food();
+				System.out.println("Enter Food Name");
+				food.setName(sc.next());
+				sc.nextLine();
+				foodServiceImpl.saveFood(food);
+				break;
+			default:
+				System.out.println("Worng Choice");
+				break;
+			}
+			System.out.println("Do you want to continue : (yes/no) : ");
+			continueChoice = sc.next();
+		}while(continueChoice.equals("yes"));
+		
+	}
+	
+	public void showMenu() {
+		System.out.println("------------------------------FOOD ORDER TOOL----------------------------");
+		System.out.println("1. Create User");
+		System.out.println("2. Create Food");
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

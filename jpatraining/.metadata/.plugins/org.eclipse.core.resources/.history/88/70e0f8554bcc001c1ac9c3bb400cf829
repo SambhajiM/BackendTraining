@@ -1,0 +1,6 @@
+package in.codegram.food_order.modal;
+
+@Entity
+public class FoodCategory {
+
+}

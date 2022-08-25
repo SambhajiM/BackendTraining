@@ -1,0 +1,6 @@
+package in.codegram.firstjpademo.domain;
+
+public class ExternalProject extends Project{
+
+	private String clintName;
+}
