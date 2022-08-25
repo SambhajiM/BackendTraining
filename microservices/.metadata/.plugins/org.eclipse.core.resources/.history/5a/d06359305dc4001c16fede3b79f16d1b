@@ -1,0 +1,24 @@
+package in.codegram.user_service.serviceimpl;
+
+import java.util.Arrays;
+import java.util.List;
+
+import in.codegram.user_service.domain.User;
+import in.codegram.user_service.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+	//Fake list of users
+	List<User> list = Arrays.asList(
+			new User(1311L, "Ranjet Rai", "9988776655"),
+			new User(1311L, "Ranjet Rai", "9988776655", ),
+			new User(1311L, "Ranjet Rai", "9988776655", null)
+			);
+	
+	@Override
+	public User getUser(Long id) {
+		// TODO Auto-generated method stub
+		return list.stream().filter(user->user);
+	}
+
+}

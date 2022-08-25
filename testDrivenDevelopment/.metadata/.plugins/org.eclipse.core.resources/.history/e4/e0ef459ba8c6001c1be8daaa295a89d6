@@ -1,0 +1,12 @@
+package in.codegram.practicaltdddemo.util;
+
+public class StringCalculator {
+
+	public int calculate(String string) {
+		if(input.isEmpty()) {
+			return 0;
+		}
+		return 1;
+	}
+
+}

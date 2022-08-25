@@ -1,0 +1,10 @@
+package in.codegram.user_service.domain;
+
+public class Contact {
+
+	private Long id;
+	private String email;
+	private String contactName;
+	
+	private Long userId;
+}

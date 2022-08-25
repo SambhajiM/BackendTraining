@@ -1,0 +1,11 @@
+package in.codegram.user_service.domain;
+
+public class User {
+	
+	private Long id;
+	private String name;
+	private String phone;
+	
+	private List<Contact> contacts = new ArraList<>();
+
+}

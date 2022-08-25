@@ -1,0 +1,14 @@
+package in.codegram.practicaltdddemo.util;
+
+public class PrimeFactorsTest {
+	
+	private PrimeFactors primeFactors;
+	
+	//1: input : empty value, output:0
+	
+	@Test
+	public void calculate_GivenEmptyIntInput_ShouldReturnZeroAsInt() {
+		
+	}
+
+}

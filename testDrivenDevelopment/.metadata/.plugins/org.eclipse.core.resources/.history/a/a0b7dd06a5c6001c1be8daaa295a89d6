@@ -1,0 +1,18 @@
+package in.codegram.practicaltdddemo.util;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class StringCalculatorTest {
+
+	//1: input : empty string, output : 0
+	
+	@Test
+	public void test() {
+		StringCalculator stringCalculator =  new StringCalculator();
+		int result = stringCalculator.calculate("");
+		assertEquals(0, result);
+	}
+
+}

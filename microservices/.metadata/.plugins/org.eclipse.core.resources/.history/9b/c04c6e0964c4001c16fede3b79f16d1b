@@ -1,0 +1,23 @@
+package in.codegram.contact_service.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import in.codegram.contact_service.domain.Contact;
+import in.codegram.contact_service.service.ContactService;
+import in.codegram.contact_service.serviceimpl.ContactServiceImpl;
+
+@RestController
+@RequestMapping("/contacts")
+public class ContactController {
+	
+	@Autowired
+	private ContactServiceImpl contactServiceImpl;
+
+	@GetMapping("/users/{userId}")
+	public List<Contact> 
+}

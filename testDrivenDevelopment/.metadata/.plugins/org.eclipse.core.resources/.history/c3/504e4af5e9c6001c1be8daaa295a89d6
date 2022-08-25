@@ -1,0 +1,30 @@
+package in.codegram.practicaltdddemo.util;
+
+import static org.junit.Assert.assertArrayEquals;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class PrimeFactorsTest {
+	
+	private PrimeFactors primeFactors;
+	
+	@Before
+	public void setup() {
+		primeFactors = new PrimeFactors();
+	}
+	
+	//1: input : empty value, output:0
+	
+	@Test
+	public void calculate_GivenEmptyIntInput_ShouldReturnZeroAsInt() {
+		List<Integer> primeFactorList = primeFactors.primeFactor(0);
+		List<Integer> expected  = new ArrayList<>();
+		expected.add(0);
+		assertArrayEquals(expected.toArray(), primeFactorList.toArray());
+	}
+
+}

@@ -1,0 +1,14 @@
+package in.codegram.user_service.serviceimpl;
+
+import in.codegram.user_service.domain.User;
+import in.codegram.user_service.service.UserService;
+
+public class UserServiceImpl implements UserService {
+
+	@Override
+	public User getUser(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

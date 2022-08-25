@@ -1,0 +1,16 @@
+package in.codegram.contact_service.serviceimpl;
+
+import java.util.List;
+
+import in.codegram.contact_service.domain.Contact;
+import in.codegram.contact_service.service.ContactService;
+
+public class ContactServiceImpl implements ContactService {
+
+	@Override
+	public List<Contact> getContactsOfUser(Long userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

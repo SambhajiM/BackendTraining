@@ -1,0 +1,27 @@
+package in.codegram.practicaltdddemo.util;
+
+import java.util.List;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+import org.junit.Before;
+
+
+public class PrimeFactorsTest {
+	
+	private PrimeFactors primeFactors;
+	
+	public void setup() {
+		primeFactors = new PrimeFactors();
+	}
+	
+	//1: input : empty value, output:0
+	
+	@Test
+	public void calculate_GivenEmptyIntInput_ShouldReturnZeroAsInt() {
+		List<Integer> primeFactorList = primeFactors.primeFactor(0);
+		arrest
+	}
+
+}
