@@ -1,0 +1,61 @@
+package comparabalandcomparator;
+
+public class Employee implements Comparable<Employee>{
+	
+	private int employeeId;
+	private String employeeName;
+	private int age;
+	private long salary;
+	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Employee(int employeeId, String employeeName, int age, long salary) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.age = age;
+		this.salary = salary;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public long getSalary() {
+		return salary;
+	}
+
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public int compareTo(Employee emp) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

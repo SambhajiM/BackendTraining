@@ -1,0 +1,78 @@
+package comparabalandcomparator;
+
+import java.util.Comparator;
+
+public class Employee implements Comparable<Employee>{
+	
+	private int employeeId;
+	private String employeeName;
+	private int age;
+	private long salary;
+	
+	public Employee() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Employee(int employeeId, String employeeName, int age, long salary) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.age = age;
+		this.salary = salary;
+	}
+
+	public int getEmployeeId() {
+		return employeeId;
+	}
+
+	public void setEmployeeId(int employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public String getEmployeeName() {
+		return employeeName;
+	}
+
+	public void setEmployeeName(String employeeName) {
+		this.employeeName = employeeName;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public long getSalary() {
+		return salary;
+	}
+
+	public void setSalary(long salary) {
+		this.salary = salary;
+	}
+
+	@Override
+	public int compareTo(Employee emp) {
+		
+		return (this.employeeId - emp.employeeId);
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [employeeId=" + employeeId + ", employeeName=" + employeeName + ", age=" + age + ", salary="
+				+ salary + "]";
+	}
+
+	public static Comparator<Employee> SalaryComparator = new Comparator<Employee>() {
+
+		@Override
+		public int compare(Employee e1, Employee e2) {
+			return (int) (e1.getSalary() - e2.getSalary());
+		}
+		
+	}
+	;
+}

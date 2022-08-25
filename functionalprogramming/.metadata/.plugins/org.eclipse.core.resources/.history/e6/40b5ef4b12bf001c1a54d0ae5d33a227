@@ -1,0 +1,16 @@
+package comparabalandcomparator;
+
+public class Employee implements Comparable<Employee>{
+	
+	private int employeeId;
+	private String employeeName;
+	private int age;
+	private long salary;
+
+	@Override
+	public int compareTo(Employee o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}
