@@ -1,0 +1,20 @@
+package com.hcl.greetdemo.main;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+import com.hcl.springfirstdemo.util.Greeting;
+
+public class TestClass {
+	
+	public static void main(String[] args) {
+//		Greeting greeting = new Greeting();
+//		greeting.greet();
+		
+		BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("beans.xml"));
+		Greeting greeting = (Greeting) beanFactory.getBean("morningGreeting");
+		greeting.greet();
+	}
+
+}

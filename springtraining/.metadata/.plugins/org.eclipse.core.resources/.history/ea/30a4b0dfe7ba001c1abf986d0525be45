@@ -1,0 +1,6 @@
+package in.codegram.didemo.dao;
+
+public interface FoodDAO {
+
+	void save(Food food);
+}

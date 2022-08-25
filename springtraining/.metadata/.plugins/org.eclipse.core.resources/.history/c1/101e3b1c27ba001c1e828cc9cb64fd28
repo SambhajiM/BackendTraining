@@ -1,0 +1,13 @@
+package com.hcl.springfirstdemo.main;
+
+import com.hcl.springfirstdemo.util.Greeting;
+
+public class TestClass {
+
+	public static void main(String[] args) {
+		Greeting greeting = new Greeting();
+		greeting.greet();
+
+	}
+
+}

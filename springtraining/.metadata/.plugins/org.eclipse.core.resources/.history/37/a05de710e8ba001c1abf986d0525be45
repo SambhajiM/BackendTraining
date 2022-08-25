@@ -1,0 +1,5 @@
+package in.codegram.didemo.service;
+
+public interface FoodService {
+
+}

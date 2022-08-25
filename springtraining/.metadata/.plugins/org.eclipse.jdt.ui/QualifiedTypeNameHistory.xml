@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.hcl.greetdemo.util.MorningGreeting"/>
+    <fullyQualifiedTypeName name="com.hcl.greetdemo.util.EveningGreeting"/>
+    <fullyQualifiedTypeName name="com.hcl.greetdemo.serviceimpl.MorningGreeting"/>
+    <fullyQualifiedTypeName name="com.hcl.greetdemo.serviceimpl.EveningGreeting"/>
+    <fullyQualifiedTypeName name="in.codegram.didemo.dao.FoodDAO"/>
+    <fullyQualifiedTypeName name="in.codegram.didemo.service.FoodService"/>
+    <fullyQualifiedTypeName name="in.codegram.didemo.model.Food"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="com.hcl.springfirstdemo.util.Greeting"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="in.codegram.springjdbcdemo.model.Employee"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.Connection"/>
+    <fullyQualifiedTypeName name="com.mysql.jdbc.Statement"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+</qualifiedTypeNameHistroy>

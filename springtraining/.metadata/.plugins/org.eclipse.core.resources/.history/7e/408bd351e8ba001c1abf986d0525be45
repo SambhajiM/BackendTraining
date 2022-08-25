@@ -1,0 +1,14 @@
+package in.codegram.didemo.serviceimpl;
+
+import in.codegram.didemo.model.Food;
+import in.codegram.didemo.service.FoodService;
+
+public class FoodServiceImpl implements FoodService {
+
+	@Override
+	public void addFood(Food food) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

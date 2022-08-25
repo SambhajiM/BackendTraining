@@ -1,0 +1,13 @@
+package com.greetdemo.serviceimpl;
+
+import com.hcl.greetdemo.service.GreetingService;
+
+public class MorningGreeting implements GreetingService {
+
+	@Override
+	public void greetUser(String userName) {
+		System.out.println(userName + " Good Morning");
+
+	}
+
+}

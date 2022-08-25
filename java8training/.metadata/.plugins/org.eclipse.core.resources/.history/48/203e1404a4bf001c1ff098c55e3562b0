@@ -1,0 +1,11 @@
+package demo2;
+
+public class EveningGreeting implements Greeting {
+
+	@Override
+	public void greet() {
+		System.out.println("Hi: Good Evening");
+
+	}
+
+}

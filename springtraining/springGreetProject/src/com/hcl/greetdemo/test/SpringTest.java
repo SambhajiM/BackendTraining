@@ -1,0 +1,20 @@
+package com.hcl.greetdemo.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.hcl.greetdemo.serviceimpl.EveningGreeting;
+import com.hcl.greetdemo.serviceimpl.MorningGreeting;
+
+public class SpringTest {
+	public static void main(String[] args) {
+
+		
+		ApplicationContext ctx = new ClassPathXmlApplicationContext("resource/beans.xml");
+		 MorningGreeting morningGreeting = (MorningGreeting) ctx.getBean("morningGreeting");
+		 morningGreeting.greetUser("Ranjeet");
+		 
+		 EveningGreeting eveningGreeting = (EveningGreeting) ctx.getBean("eveningGreeting");
+		 eveningGreeting.greetUser("Ranjeet");
+	}
+}

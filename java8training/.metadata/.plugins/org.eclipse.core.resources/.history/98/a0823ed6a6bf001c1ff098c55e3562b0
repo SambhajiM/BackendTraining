@@ -1,0 +1,17 @@
+package demo3;
+
+public class TestGreetingWithoutJava8 {
+
+	public static void main(String[] args) {
+		
+	
+		Greeting morningGreeting	= () -> System.err.println("Hi Good Morning");
+		morningGreeting.greet();
+		System.out.println(morningGreeting);
+		
+		Greeting eveningGreeting = () -> System.err.println("Hi Good evening");
+		eveningGreeting.greet();
+		System.out.println(eveningGreeting);
+		
+	}
+}

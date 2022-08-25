@@ -1,0 +1,20 @@
+package demo4;
+
+public class ThreadDemoUsingLambda {
+	
+	public static void main(String[] args) {
+		Runnable target = new Runnable() {
+
+			@Override
+			public void run() {
+				String threadName = Thread.currentThread().getName();
+				
+				for(int i=1; i<=0; i++) {
+					System.out.println(threadName+": " +i);
+				}
+				
+			}
+			
+		};
+	}
+}

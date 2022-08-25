@@ -1,0 +1,21 @@
+package com.hcl.greetdemo.test;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.FileSystemResource;
+
+import com.hcl.greetdemo.util.EveningGreeting;
+import com.hcl.greetdemo.util.MorningGreeting;
+
+public class SpringTest {
+	public static void main(String[] args) {
+//		Greeting greeting = new Greeting();
+//		greeting.greet();
+		
+		BeanFactory beanFactory = new XmlBeanFactory(new FileSystemResource("beans.xml"));
+		MorningGreeting morningGreeting = (MorningGreeting) beanFactory.getBean("morningGreeting");
+		morningGreeting.greetUser("Ranjeet");
+		EveningGreeting EveningGreeting = (EveningGreeting) beanFactory.getBean("eveningGreeting");
+		EveningGreeting.greetUser("Ranjeet");
+	}
+}

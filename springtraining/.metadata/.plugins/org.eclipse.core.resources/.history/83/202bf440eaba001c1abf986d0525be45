@@ -1,0 +1,10 @@
+package in.codegram.didemo.test;
+
+public class DiDemoTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

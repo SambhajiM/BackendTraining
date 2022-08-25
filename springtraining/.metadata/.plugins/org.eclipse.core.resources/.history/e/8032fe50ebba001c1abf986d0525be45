@@ -1,0 +1,5 @@
+package com.hcl.greetdemo.service;
+
+public interface GreetingService {
+	void greetUser(String userName);
+}

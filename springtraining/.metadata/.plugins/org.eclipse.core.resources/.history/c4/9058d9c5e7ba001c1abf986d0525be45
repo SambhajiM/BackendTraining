@@ -1,0 +1,13 @@
+package in.codegram.didemo.daoimpl;
+
+import in.codegram.didemo.dao.FoodDAO;
+
+public class FoodDAOImpl implements FoodDAO {
+
+	@Override
+	public void save() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

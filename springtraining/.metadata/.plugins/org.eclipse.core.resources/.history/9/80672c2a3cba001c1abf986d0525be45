@@ -1,0 +1,7 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+		
+<beans>
+	<bean id="EveningGreeting" class="com.hcl.springfirstdemo.util.EveningGreeting"/>
+	<bean id="MorningGreeting" class="com.hcl.springfirstdemo.util.MorningGreeting"/>
+</beans>	

@@ -1,0 +1,5 @@
+package in.codegram.didemo.dao;
+
+public class FoodDAO {
+
+}

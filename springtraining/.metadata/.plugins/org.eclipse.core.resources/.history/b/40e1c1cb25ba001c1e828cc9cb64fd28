@@ -1,0 +1,5 @@
+package com.hcl.springfirstdemo.util;
+
+public class Greeting {
+
+}

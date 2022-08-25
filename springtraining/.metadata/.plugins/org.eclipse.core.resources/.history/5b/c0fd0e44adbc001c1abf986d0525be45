@@ -1,0 +1,13 @@
+package in.codegram.springjdbcdemo.daoimpl;
+
+import javax.sql.DataSource;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmployeeDAOImpl {
+	
+	@Autowired
+	private DataSource dataSource;
+
+}

@@ -1,0 +1,8 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+		"http://www.springframework.org/dtd/spring-beans.dtd">
+		
+<beans>
+	<bean id="foodDAOImpl" class="in.codegram.didemo.daoimpl.FoodDAOImpl"/>
+	<bean id="foodServiceImpl" class="in.codegram.didemo.serviceimpl.FoodServiceImpl"/>
+	
+</beans>	

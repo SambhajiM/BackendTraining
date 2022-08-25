@@ -1,0 +1,7 @@
+package in.codegram.springjdbcdemo.daoimpl;
+
+
+@Component
+public class EmployeeDAOImpl {
+
+}

@@ -1,0 +1,5 @@
+package streamdemo1.common;
+
+public class Person {
+
+}

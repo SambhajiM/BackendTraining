@@ -1,0 +1,7 @@
+package com.hcl.greetdemo.service;
+
+public class MorningGreeting {
+	public void greetUser(String name) {
+		System.out.println( name + " Good Morning");
+	}
+}
