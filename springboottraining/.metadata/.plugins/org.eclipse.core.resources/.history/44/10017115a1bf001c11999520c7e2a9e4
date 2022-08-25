@@ -1,0 +1,6 @@
+package com.hello.demo.ws.endpoints.rest;
+
+@RestController
+public class HelloEndPoint {
+
+}

@@ -1,0 +1,14 @@
+package com.hello.demo.ws.endpoints.rest;
+
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HelloEndPoint {
+	
+	@RequestBody("/")
+	public String hello() {
+		return "Hello this is Hello";
+	}
+
+}
